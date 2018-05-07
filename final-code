@@ -1,0 +1,51 @@
+#include <NewPing.h>
+
+#define TRIGGER_PIN  A0
+#define ECHO_PIN     A1
+#define RIGHT_MOTOR 9
+#define LEFT_MOTOR 10
+#define LEFT_SENSOR A2
+#define RIGHT_SENSOR A3
+#define TOO_CLOSE 10
+#define MAX_DISTANCE (TOO_CLOSE * 20)
+
+
+
+#define MAX_DISTANCE 200
+
+NewPing DistanceSensor(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+
+void setup()
+{
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    unsigned int cm = DistanceSensor.ping_cm();
+    
+
+
+  int rightlight= analogRead(RIGHT_SENSOR);
+  int leftlight= analogRead(LEFT_SENSOR);
+
+int leftmotorvalue = map(rightlight,0,1024,200,0);
+int rightmotorvalue = map(leftlight,0,1024,150,0);
+
+   
+
+  analogWrite(RIGHT_MOTOR, rightmotorvalue);
+  
+  analogWrite(LEFT_MOTOR,leftmotorvalue);
+
+if (!(millis()%1000)) { 
+   Serial.print("Distance: ");
+    Serial.print(cm);
+    Serial.println("cm");
+    Serial.println(leftlight);
+    Serial.println(rightlight);
+}
+
+}
+  
+
