@@ -17,4 +17,5 @@ Then when I needed to control the motors, I had some help and I used transistors
 I used the map command to map the light sensors to the motors, it worked but one motor was slower than the other;
 causing the car to go in circles. I fixed that by slowing the faster wheel. I need more time and research to make
 the proximity sensor to work because I have to redo the code, but since I have the distance sensor working it shouldn’t
-really be too difficult if I have time.
+really be too difficult if I have time. I also need to see how to make the sensors more sensitive to light, they detect more
+only from a certain angle.
