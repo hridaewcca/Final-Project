@@ -1,0 +1,27 @@
+# Light chasing car
+
+I propose to build a car that moves towards light and turns around when it gets too close to a wall
+## Summary
+
+The light chasing car is a toy car with 2 motors and 1 non-motorized wheel. The car has 2 light sensors and one proximity sensor between them. The light sensor on the left controls the right wheel and the light sensor on the right controls the left wheel. When one sensor sees more light than the other, it moves the wheel it controls so that the car turns towards the light. The proximity sensor is there to stop the car from banging into walls as it detects the distance to the nearest object and then tells the wheels to turn around at a certain distance.
+
+## Component Parts
+
+The components are attached to a plastic chassis.
+- 2 motors. (OUTPUT)
+- Ultrasonic sensor. (INPUT)
+- 2 light sensors. (INPUT)
+
+## Challenges
+
+I think getting the motors to do what i want will be difficult, getting them to move at the proper speed and giving it the correct values so that it doesn't crash too much. 
+
+## Timeline
+
+What parts of the project do you anticipate you will complete in each of the next 5 weeks?
+
+- Week 1: Write proposal, research components and previous projects
+- Week 2: Acquire hardware components: and start testing
+- Week 3: Get familiar with components, start to write code.
+- Week 4: Integrate all the components together and test.
+- Week 5: Complete project.
