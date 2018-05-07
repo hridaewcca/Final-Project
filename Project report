@@ -1,0 +1,20 @@
+# Project report
+I started this project by researching what the arduino could do. I wanted to do something with motors and proximity sensors.
+My initial idea was to create a car that drives around without bumping into walls, turning around as soon as it gets close
+to one. At first I thought it would be simple getting the motors to work but that turned out to be the most challenging part
+for me. 
+I bought a motor chassis on amazon, it can house all my components and comes with 2 wheels. Turns out that motors do not work
+in a simple manner with arduinos. Every aspect has to be controlled and I could not just hook them up to a power source and
+arduino and expect it to work. I needed something to control the motors and convert the signals from the arduino. Initially
+I thought I could use a motor driver to do this as this is what other people were using online. The motor driver I was
+planning on using turned out to be incompatible with my motors. I was using a small motor driver meant only for one motor.
+I found this problem late because I was still tinkering with all the components and the motors were running without commands
+so I did not think it was an issue. I got the proximity sensor do detect and print the distance in centimeters so that was
+an early success because I got that working within the first 2 weeks. I got it with the help of another project online.
+The project used the same sensor I have so I used the library that person used. With that I was able to define a maximum
+distance and was able to print the converted distance value. I used the command Serial.print(“Distance: “);
+Then when I needed to control the motors, I had some help and I used transistors to control the motors individually.
+I used the map command to map the light sensors to the motors, it worked but one motor was slower than the other;
+causing the car to go in circles. I fixed that by slowing the faster wheel. I need more time and research to make
+the proximity sensor to work because I have to redo the code, but since I have the distance sensor working it shouldn’t
+really be too difficult if I have time.
